@@ -8,11 +8,6 @@ public class ReleaseYearFilter implements AutomobileFilter {
     public ReleaseYearFilter() {
     }
 
-    public ReleaseYearFilter(int from, int to) {
-        this.fromYear = from;
-        this.toYear = to;
-    }
-
     public void setFromYear(int fromYear) {
         this.fromYear = fromYear;
     }

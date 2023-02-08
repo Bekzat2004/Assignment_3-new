@@ -1,14 +1,12 @@
 import java.util.Scanner;
 import java.util.List;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.Condition;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         List<Automobile> automobiles = List.of(
-                new Automobile(false, 1998, true),
-                new Automobile(true, 2003, false)
+                /*new Automobile(false, 1998, true),
+                new Automobile(true, 2003, false)*/
         );
         TransmissionBoxFilter transmission = new TransmissionBoxFilter();
         ReleaseYearFilter releaseYear = new ReleaseYearFilter();
@@ -41,6 +39,8 @@ public class Main {
         PriceRangeFilter filterPrice = new PriceRangeFilter();
         VolumeOfEngineFilter filterVolume = new VolumeOfEngineFilter();
         ColorFilter filterColor = new ColorFilter();
+        BrandFilter filterBrand = new BrandFilter();
+        ModelFilter filterModel = new ModelFilter();
 
         System.out.println("You should follow instructions to buy a car.");
         inputCondition(scanner, filterCondition);
@@ -49,8 +49,9 @@ public class Main {
         inputPriceRange(scanner, filterPrice);
         inputVolume(scanner, filterVolume);
         inputColor(scanner, filterColor);
-        System.out.println(automobiles);
-        for (Automobile automobile : automobiles){
+        inputBrand(scanner, filterBrand);
+        inputModel(scanner, filterModel);
+        for (Automobile automobile : automobiles) {
             System.out.println(automobile.toString());
         }
     }
@@ -71,7 +72,11 @@ public class Main {
         String color = scanner.nextLine();
         System.out.println("Enter a volume of engine.");
         double volume = scanner.nextDouble();
-        Automobile automobile = new Automobile(color, price, volume);
+        System.out.println("Enter the brand of car.");
+        String brand = scanner.nextLine();
+        System.out.println("Enter the model of car.");
+        String model = scanner.nextLine();
+        Automobile automobile = new Automobile(transmissionType, year, isNew, color, price, volume, brand, model);
         automobiles.add(automobile);
     }
 
@@ -110,5 +115,15 @@ public class Main {
     public static void inputVolume(Scanner scanner, VolumeOfEngineFilter filter) {
         System.out.println("Enter the volume of engine.");
         filter.setVolumeOfEngine(scanner.nextDouble());
+    }
+
+    public static void inputBrand(Scanner scanner, BrandFilter filter) {
+        System.out.println("Enter the brand.");
+        filter.setBrand(scanner.nextLine());
+    }
+
+    public static void inputModel(Scanner scanner, ModelFilter filter) {
+        System.out.println("Enter the model.");
+        filter.setModel(scanner.nextLine());
     }
 }

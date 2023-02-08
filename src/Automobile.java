@@ -1,58 +1,35 @@
 public class Automobile extends Transport {
-    public Automobile(String color, double price, double volumeOfEngine) {
-        super(color, price, volumeOfEngine);
-    }
-
-    private String color;
     private boolean isAutomatic;
-    private int releaseYear;
-    private boolean isNew;
+    private String brand;
+    private String model;
 
-    public Automobile(boolean isAutomatic, int releaseYear, boolean isNew) {
-        super();
+    public Automobile(boolean isAutomatic, int releaseYear, boolean isNew, String color, double price,
+                      double volumeOfEngine, String brand, String model) {
+        super(color, price, volumeOfEngine, isNew, releaseYear);
         this.isAutomatic = isAutomatic;
-        this.releaseYear = releaseYear;
-        this.isNew = isNew;
+        this.brand = brand;
+        this.model = model;
     }
+
 
     public boolean isAutomatic() {
         return isAutomatic;
     }
 
-
-    @Override
-    public String getColor() {
-        return color;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setAutomatic(boolean automatic) {
-        isAutomatic = automatic;
+    public String getModel() {
+        return model;
     }
 
-    public int getReleaseYear() {
-        return releaseYear;
-    }
-
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
-    @Override
-    public boolean isNew() {
-        return isNew;
-    }
-
-    @Override
-    public void setNew(boolean aNew) {
-        isNew = aNew;
-    }
-
-    @Override
+    /*@Override
     public String toString() {
         return "Automobile{" +
                 "isAutomatic=" + isAutomatic +
                 ", releaseYear=" + releaseYear +
                 ", isNew=" + isNew +
                 '}';
-    }
+    }*/
 }

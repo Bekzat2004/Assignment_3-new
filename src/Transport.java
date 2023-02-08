@@ -1,66 +1,35 @@
 public abstract class Transport {
-    String color;
-    String region;
-    double price;
-    double volumeOfEngine;
-    double weight;
-    boolean isNew;
+    private String color;
+    private double price;
+    private double volumeOfEngine;
+    private boolean isNew;
+    private int releaseYear;
 
-    public Transport(String color, double price, double volumeOfEngine) {
+    public Transport(String color, double price, double volumeOfEngine, boolean isNew, int releaseYear) {
         this.color = color;
         this.price = price;
         this.volumeOfEngine = volumeOfEngine;
+        this.isNew = isNew;
+        this.releaseYear = releaseYear;
     }
-
-    public Transport() {
-
-    }
-
-
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getRegion() {
-        return region;
-    }
-
-    public void setRegion(String region) {
-        this.region = region;
-    }
-
-
-
     public double getPrice() {
         return price;
     }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-
 
     public double getVolumeOfEngine() {
         return volumeOfEngine;
     }
 
-    public void setVolumeOfEngine(double volumeOfEngine) {
-        this.volumeOfEngine = volumeOfEngine;
-    }
-
-
-
     public boolean isNew() {
         return isNew;
     }
 
-    public void setNew(boolean aNew) {
-        this.isNew = aNew;
+    public int getReleaseYear() {
+        return releaseYear;
     }
 }
