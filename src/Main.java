@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
-// aloaloaloaloalaoaolala
+
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,15 +10,14 @@ public class Main {
                 new Automobile(false, 1998, true),
                 new Automobile(true, 2003, false)
         );
-        List<Motortransport> motortransports = List.of(new Motortransport("12 km/h", 10000, 2));
         TransmissionBoxFilter transmission = new TransmissionBoxFilter();
         ReleaseYearFilter releaseYear = new ReleaseYearFilter();
         automobiles = transmission.filter(automobiles);
         System.out.println(automobiles);
-        menu(input, automobiles, motortransports);
+        menu(input, automobiles);
     }
 
-    public static void menu(Scanner scanner, List<Automobile> automobiles, List<Motortransport> motortransports) {
+    public static void menu(Scanner scanner, List<Automobile> automobiles) {
         boolean isOpen = true;
         while (isOpen) {
             System.out.println("Choose an option by the number below:");
@@ -27,7 +26,7 @@ public class Main {
             System.out.println("3. Exit");
             switch (scanner.nextInt()) {
                 case 1 -> buyCar(automobiles);
-                case 2 -> publishCar(automobiles, motortransports);
+                case 2 -> publishCar(automobiles);
                 case 3 -> isOpen = false;
                 default -> System.out.println("Pick a number between 1 and 3");
             }
@@ -44,45 +43,38 @@ public class Main {
         ColorFilter filterColor = new ColorFilter();
 
         System.out.println("You should follow instructions to buy a car.");
-        System.out.println("What type of transport do you want to buy?\n1 - Automobile\n2 - Mototransport");
-        switch(scanner.nextInt()) {
-            case 1:
-                inputCondition(scanner, filterCondition);
-                inputTransmission(scanner, filterTransmission);
-                inputReleaseYearRange(scanner, filterYear);
-                inputPriceRange(scanner, filterPrice);
-                inputVolume(scanner, filterVolume);
-                inputColor(scanner, filterColor);
-                System.out.println(automobiles);
-                for (Automobile automobile : automobiles){
-                    System.out.println(automobile.toString());
-                }
+        inputCondition(scanner, filterCondition);
+        inputTransmission(scanner, filterTransmission);
+        inputReleaseYearRange(scanner, filterYear);
+        inputPriceRange(scanner, filterPrice);
+        inputVolume(scanner, filterVolume);
+        inputColor(scanner, filterColor);
+        System.out.println(automobiles);
+        for (Automobile automobile : automobiles){
+            System.out.println(automobile.toString());
         }
     }
 
-    private static void publishCar(List<Automobile> automobiles, List<Motortransport> motortransports) {
+
+    private static void publishCar(List<Automobile> automobiles) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You should follow instructions to publish a car.");
-        System.out.println("What type of transport do you want to publish?\n1 - Automobile\n2 - Mototransport");
-        switch(scanner.nextInt()) {
-            case 1:
-                System.out.println("Choose the condition of the car:\nTrue - new\nFalse - used");
-                boolean isNew = scanner.nextBoolean();
-                System.out.println("Choose the transmission:\nTrue - mechanic\nFalse - automatic");
-                boolean transmissionType = scanner.nextBoolean();
-                System.out.println("Enter a year.");
-                int year = scanner.nextInt();
-                System.out.println("Enter a price.");
-                int price = scanner.nextInt();
-                System.out.println("Enter a color.");
-                String color = scanner.nextLine();
-                System.out.println("Enter a volume of engine.");
-                double volume = scanner.nextDouble();
-                Automobile automobile = new Automobile(color, price, volume);
-                automobiles.add(automobile);
-
-        }
+        System.out.println("Choose the condition of the car:\nTrue - new\nFalse - used");
+        boolean isNew = scanner.nextBoolean();
+        System.out.println("Choose the transmission:\nTrue - mechanic\nFalse - automatic");
+        boolean transmissionType = scanner.nextBoolean();
+        System.out.println("Enter a year.");
+        int year = scanner.nextInt();
+        System.out.println("Enter a price.");
+        int price = scanner.nextInt();
+        System.out.println("Enter a color.");
+        String color = scanner.nextLine();
+        System.out.println("Enter a volume of engine.");
+        double volume = scanner.nextDouble();
+        Automobile automobile = new Automobile(color, price, volume);
+        automobiles.add(automobile);
     }
+
 
     private static void inputReleaseYearRange(Scanner scanner, ReleaseYearFilter filter) {
         System.out.println("Enter the range of release.");
@@ -120,5 +112,3 @@ public class Main {
         filter.setVolumeOfEngine(scanner.nextDouble());
     }
 }
-
-//топливо(электрокар инклудед) как отдельный класс, и буу\нью тоже как этаж
