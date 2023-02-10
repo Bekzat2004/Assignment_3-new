@@ -1,9 +1,9 @@
 public abstract class Transport {
-    private String color;
-    private double price;
-    private double volumeOfEngine;
-    private boolean isNew;
-    private int releaseYear;
+    protected String color;
+    protected double price;
+    protected double volumeOfEngine;
+    protected boolean isNew;
+    protected int releaseYear;
 
     public Transport(String color, double price, double volumeOfEngine, boolean isNew, int releaseYear) {
         this.color = color;
