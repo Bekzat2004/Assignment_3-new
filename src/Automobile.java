@@ -11,7 +11,6 @@ public class Automobile extends Transport {
         this.model = model;
     }
 
-
     public boolean isAutomatic() {
         return isAutomatic;
     }
@@ -24,12 +23,17 @@ public class Automobile extends Transport {
         return model;
     }
 
-    /*@Override
+    @Override
     public String toString() {
         return "Automobile{" +
                 "isAutomatic=" + isAutomatic +
                 ", releaseYear=" + releaseYear +
                 ", isNew=" + isNew +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                ", volumeOfEngine=" + volumeOfEngine +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
                 '}';
-    }*/
+    }
 }
