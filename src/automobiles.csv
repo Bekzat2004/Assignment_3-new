@@ -1,0 +1,254 @@
+id,is_automatic,release_year,is_new,color,price,volume_of_engine,brand,model
+1,true,2022,true,silver,17500000,3,Toyota,Camry
+2,false,2019,false,black,10500000,2.5,Honda,Accord
+3,true,2021,true,white,12200000,2,Nissan,Sentra
+4,false,2017,false,gray,9000000,1.8,Hyundai,Elantra
+5,true,2022,true,blue,14500000,2.5,Toyota,Avalon
+6,false,2015,false,red,7500000,1.5,Honda,Civic
+7,true,2020,false,black,13200000,3.5,Nissan,Maxima
+8,false,2016,false,silver,8200000,2,Hyundai,Sonata
+9,true,2022,true,white,18800000,5.7,Toyota,Land Cruiser
+10,false,2018,false,blue,9700000,2.4,Honda,CR-V
+11,true,2021,true,red,15300000,2,Nissan,Altima
+12,false,2014,false,gray,6900000,1.8,Hyundai,Accent
+13,true,2022,true,black,21000000,4.5,Toyota,Tundra
+14,false,2017,false,white,8500000,2.5,Honda,Pilot
+15,true,2020,false,blue,12900000,2.5,Nissan,Rogue
+16,false,2016,false,red,7800000,2.4,Hyundai,Tucson
+17,true,2022,true,silver,13500000,2.5,Toyota,Corolla
+18,false,2019,false,black,10200000,2.4,Honda,Odyssey
+19,true,2021,true,white,11800000,2.5,Nissan,Murano
+20,false,2015,false,gray,7100000,1.6,Hyundai,Veloster
+22,false,2018,false,red,9400000,2,Honda,Fit
+23,true,2020,false,black,12700000,2.5,Nissan,Pathfinder
+24,false,2014,false,silver,6800000,1.5,Hyundai,i20
+25,true,2022,true,white,19800000,4.7,Toyota,Sequoia
+26,false,2017,false,blue,8900000,2.4,Honda,HR-V
+27,true,2021,true,red,14100000,2.5,Nissan,Kicks
+28,false,2016,false,black,7600000,1.6,Hyundai,Accent
+29,true,2022,true,gray,15200000,2.5,Toyota,Rav4
+30,false,2019,false,white,9800000,2,Honda,Civic
+31,true,2022,true,black,18200000,3.5,Toyota,Sienna
+32,false,2018,false,silver,11500000,2.4,Honda,Accord Hybrid
+33,true,2021,true,red,12800000,2,Nissan,Versa
+34,false,2015,false,gray,7200000,1.5,Hyundai,Elantra GT
+35,true,2022,true,blue,15500000,3,Toyota,Camry Hybrid
+36,false,2017,false,black,8700000,2.5,Honda,CR-V Hybrid
+37,true,2020,false,white,14200000,3.5,Nissan,Pathfinder
+38,false,2016,false,red,7900000,2.4,Hyundai,Sonata Hybrid
+39,true,2022,true,silver,19500000,4.7,Toyota,Land Cruiser Prado
+40,false,2018,false,blue,10100000,2.4,Honda,HR-V
+41,true,2021,true,black,14800000,2.5,Nissan,Altima AWD
+42,false,2014,false,gray,6700000,1.8,Hyundai,Accent Hatchback
+43,true,2022,true,white,22500000,5.7,Toyota,Sequoia Platinum
+44,false,2017,false,silver,8300000,2.5,Honda,Odyssey
+45,true,2020,false,blue,13300000,2.5,Nissan,Rogue Sport
+46,false,2016,false,red,7600000,2.4,Hyundai,Tucson Sport
+47,true,2022,true,gray,14200000,2.5,Toyota,Corolla Cross
+48,false,2019,false,black,10800000,2.4,Honda,Civic Type R
+49,true,2021,true,white,12500000,2.5,Nissan,Sentra SR
+50,false,2015,false,gray,7300000,1.6,Hyundai,Accent Sedan
+51,true,2022,true,black,19500000,4,Toyota,4Runner
+52,false,2018,false,gray,12500000,2,Honda,Crosstour
+53,true,2021,true,red,15900000,2.5,Nissan,Frontier
+54,false,2016,false,silver,8100000,1.6,Hyundai,Accent
+55,true,2022,true,white,17900000,3.5,Toyota,Tacoma
+56,false,2019,false,black,9700000,1.8,Honda,Civic
+57,true,2021,true,blue,13500000,2,Nissan,Versa
+58,false,2015,false,red,7100000,1.6,Hyundai,Elantra
+59,true,2022,true,silver,22500000,5.7,Toyota,Sequoia
+60,false,2017,false,gray,9400000,2.4,Honda,Accord
+61,true,2021,true,white,14900000,3.5,Nissan,Pathfinder
+62,false,2014,false,blue,6800000,1.6,Hyundai,Accent
+63,true,2022,true,black,21900000,4,Toyota,Land Cruiser Prado
+64,false,2018,false,gray,12500000,2,Honda,HR-V
+65,true,2021,true,red,16300000,2.5,Nissan,Sentra
+66,false,2015,false,silver,7100000,1.6,Hyundai,Accent
+67,true,2022,true,white,18500000,3.5,Toyota,RAV4 Prime
+68,false,2019,false,black,10100000,1.5,Honda,Fit
+69,true,2021,true,blue,12900000,2.5,Nissan,Altima
+70,false,2014,false,red,6500000,1.4,Hyundai,i10
+71,true,2021,true,white,11900000,1.5,Mitsubishi,Mirage
+72,false,2017,false,gray,8500000,2.2,Ford,Escape
+73,true,2022,true,silver,18800000,4,Jeep,Wrangler
+74,false,2018,false,black,10700000,2,Volkswagen,Jetta
+75,true,2021,true,red,14500000,2.5,Chevrolet,Equinox
+76,false,2014,false,white,6200000,1.4,Kia,Rio
+77,true,2022,true,gray,12400000,2,Mazda,CX-30
+78,false,2019,false,blue,9800000,2.5,Subaru,Forester
+79,true,2021,true,black,13300000,3.6,Dodge,Durango
+80,false,2015,false,silver,7200000,1.8,Ford,Focus
+81,true,2022,true,white,16300000,2.5,Jeep,Grand Cherokee
+82,false,2018,false,gray,10300000,2,Volkswagen,Passat
+83,true,2021,true,red,14900000,2.5,Chevrolet,Blazer
+84,false,2014,false,black,6400000,1.8,Kia,Soul
+85,true,2022,true,blue,17700000,3,Mazda,CX-5
+86,false,2017,false,white,9200000,2.4,Subaru,Outback
+87,true,2021,true,gray,13900000,2,Dodge,Challenger
+88,false,2016,false,black,7900000,2.4,Ford,Fusion
+89,true,2022,true,silver,13100000,2.5,Jeep,Cherokee
+90,false,2019,false,red,10500000,2,Volkswagen,Tiguan
+91,true,2021,true,black,12900000,3.6,Chevrolet,Traverse
+92,false,2015,false,white,7500000,1.5,Kia,Forte
+93,true,2022,true,gray,19800000,5.7,Mazda,CX-9
+94,false,2018,false,blue,9900000,2.5,Subaru,Crosstrek
+95,true,2021,true,red,15900000,2,Dodge,Charger
+96,false,2014,false,silver,6800000,1.6,Ford,Fiesta
+97,true,2022,true,white,20300000,4.6,Jeep,Grand Wagoneer
+98,false,2017,false,gray,9200000,2,Volkswagen,Beetle
+99,true,2021,true,black,14800000,3,Chevrolet,Tahoe
+100,false,2016,false,red,8100000,2,Ford,Escape
+101,true,2022,true,black,16500000,2.5,Honda,CR-V
+102,false,2018,false,silver,11200000,2.5,Nissan,Murano
+103,true,2021,true,red,14300000,2,Chevrolet,Trailblazer
+104,false,2016,false,black,7800000,2,Ford,Escape
+105,true,2022,true,white,20900000,5,Toyota,Tundra
+106,false,2019,false,gray,10100000,1.5,Honda,City
+107,true,2021,true,blue,12900000,2,Nissan,Kicks
+108,false,2015,false,red,6900000,1.6,Hyundai,Veloster
+109,true,2022,true,silver,18700000,3.5,Lexus,NX
+110,false,2017,false,white,9200000,2.4,Honda,CR-V
+111,true,2021,true,gray,13400000,2,Nissan,Rogue
+112,false,2014,false,blue,6100000,1.2,Toyota,Wigo
+113,true,2022,true,black,22300000,4,Lexus,GX
+114,false,2018,false,gray,12100000,2,Honda,Civic
+115,true,2021,true,red,16700000,2.5,Nissan,Titan
+116,false,2015,false,silver,7500000,1.5,Mitsubishi,Mirage
+117,true,2022,true,white,17700000,3,Toyota,Highlander
+118,false,2017,false,gray,8500000,2,Volkswagen,Golf
+119,true,2021,true,blue,13900000,3.5,Lexus,RX
+120,false,2015,false,white,7600000,1.5,Toyota,Yaris
+121,true,2022,true,black,18700000,3.5,Honda,Pilot
+122,false,2016,false,red,9700000,1.8,Toyota,Corolla
+123,true,2021,true,gray,11500000,2.5,Nissan,Altima
+124,false,2014,false,white,5200000,1,Suzuki,Celerio
+125,true,2022,true,silver,25500000,5.7,Lexus,LX
+126,false,2017,false,blue,8900000,1.6,Kia,Rio
+127,true,2021,true,black,14100000,2.4,Hyundai,Tucson
+128,false,2013,false,gray,4800000,1,Toyota,Vios
+129,true,2022,true,red,20000000,4.5,Lexus,LS
+130,false,2016,false,silver,10900000,2,Mazda,CX-5
+131,true,2021,true,white,19500000,3.5,Toyota,Sienna
+132,false,2015,false,black,6800000,1.5,Honda,Jazz
+133,true,2022,true,red,12300000,2.5,Nissan,Sentra
+134,false,2013,false,blue,4500000,1,Toyota,Wigo
+135,true,2021,true,silver,21200000,4.6,Lexus,LC
+136,false,2016,false,gray,9600000,1.8,Toyota,Vios
+137,true,2022,true,black,17000000,3,Nissan,Pathfinder
+138,false,2014,false,white,5500000,1.2,Honda,Brio
+139,true,2021,true,blue,14900000,3.2,Lexus,ES
+140,false,2017,false,silver,8800000,2,Toyota,Corolla Cross
+141,true,2022,true,red,18800000,3.5,Nissan,Maxima
+142,false,2015,false,black,6900000,1.5,Toyota,Avanza
+143,true,2021,true,white,12600000,2.5,Honda,Accord
+144,false,2013,false,gray,4900000,1,Suzuki,Alto
+145,true,2022,true,silver,26500000,5.7,Lexus,UX
+146,false,2017,false,blue,8200000,1.6,Kia,Picanto
+147,true,2021,true,black,15300000,2.8,Hyundai,Santa Fe
+148,false,2014,false,white,5900000,1.3,Mitsubishi,Adventure
+149,true,2022,true,red,21300000,4.7,Lexus,GS
+150,false,2016,false,silver,9800000,2,Nissan,Juke
+151,true,2021,true,white,20300000,4.5,Toyota,Land Cruiser
+152,false,2015,false,black,7300000,1.5,Honda,Mobilio
+153,true,2022,true,red,13300000,2.6,Mazda,3
+154,false,2013,false,blue,5100000,1.1,Toyota,Avanza
+155,true,2021,true,silver,22200000,4.8,Lexus,LS
+156,false,2016,false,gray,9300000,1.8,Toyota,Corolla Altis
+157,true,2022,true,black,17900000,3.2,Nissan,Frontier
+158,false,2014,false,white,5700000,1.2,Honda,City
+159,true,2021,true,blue,15700000,3.4,Lexus,RC
+160,false,2017,false,silver,9100000,2,Toyota,Innova
+161,true,2021,false,red,5500000,1.2,Suzuki,Swift
+162,false,2015,true,blue,8700000,2,Nissan,X-Trail
+163,true,2022,true,white,19500000,4.5,Toyota,Fortuner
+164,false,2017,false,silver,10300000,2.3,Mitsubishi,Xpander
+165,true,2021,true,black,19800000,4.6,Lexus,NX
+166,false,2016,false,gray,7800000,1.6,Kia,Rio
+167,true,2022,true,red,13000000,2.2,Honda,Civic
+168,false,2014,false,blue,4800000,1.1,Toyota,Wigo
+169,true,2021,true,white,17200000,3.8,Nissan,Patrol Royale
+170,false,2015,false,silver,6600000,1.5,Honda,Brio
+171,true,2022,true,black,13600000,2.5,Mazda,CX-5
+172,false,2013,false,white,5300000,1.1,Toyota,Vios
+173,true,2021,true,silver,22500000,4.9,Lexus,ES
+174,false,2016,false,black,8400000,1.8,Toyota,Altis
+175,true,2022,true,red,15900000,3.6,Nissan,Navara
+176,false,2014,false,white,5800000,1.3,Honda,Jazz
+177,true,2021,true,blue,19800000,4.4,Toyota,Prado
+178,false,2017,false,silver,9700000,2.1,Mitsubishi,Mirage G4
+179,true,2022,true,black,21400000,4.7,Lexus,RX
+180,false,2015,false,gray,7900000,1.7,Kia,Sportage
+181,true,2022,true,red,19900000,4.2,Toyota,Camry
+182,false,2016,false,black,9200000,1.9,Suzuki,Ciaz
+183,true,2021,true,white,14300000,3.1,Nissan,Sylphy
+184,false,2014,false,gray,5300000,1.3,Honda,Civic
+185,true,2022,true,silver,27500000,6,Lexus,LC
+186,false,2017,false,red,10900000,2.4,Toyota,Hilux
+187,true,2021,true,black,18200000,4,Mitsubishi,Montero Sport
+188,false,2015,false,white,6900000,1.6,Kia,Soul
+189,true,2022,true,blue,14700000,3.2,Honda,City
+190,false,2013,false,silver,4900000,1.2,Toyota,Yaris
+191,true,2021,true,white,20500000,4.7,Lexus,GX
+192,false,2016,false,gray,8500000,1.7,Nissan,Almera
+193,true,2022,true,red,22300000,4.9,Toyota,Land Cruiser Prado
+194,false,2014,false,black,5900000,1.3,Honda,Jazz
+195,true,2021,true,silver,25600000,5.5,Lexus,LX
+196,false,2017,false,white,9900000,2.2,Mitsubishi,Strada
+197,true,2022,true,black,16500000,3.8,Nissan,X-Trail
+198,false,2015,false,blue,8300000,1.8,Toyota,Vios
+199,true,2021,true,white,18900000,4.3,Lexus,IS
+200,false,2016,false,silver,7800000,1.6,Kia,Forte
+201,true,2023,true,black,20000000,4,Toyota,Corolla
+202,false,2018,false,silver,9000000,2,Hyundai,Elantra
+203,true,2022,true,white,15000000,3.5,Nissan,Kicks
+204,false,2015,false,red,6500000,1.5,Toyota,Avanza
+205,true,2023,true,blue,25000000,5,Lexus,LS
+206,false,2017,false,gray,11000000,2.3,Honda,HR-V
+207,true,2022,true,red,18000000,4.2,Mitsubishi,Outlander
+208,false,2014,false,black,5000000,1,Suzuki,Alto
+209,true,2023,true,silver,22000000,4.7,Lexus,GS
+210,false,2016,false,white,8000000,1.7,Kia,Optima
+211,true,2022,true,black,17000000,3.7,Nissan,Juke
+212,false,2013,false,gray,4500000,1.1,Toyota,Prius
+213,true,2023,true,white,19000000,4.1,Lexus,RC
+214,false,2015,false,black,7500000,1.8,Honda,Fit
+215,true,2022,true,silver,20500000,4.5,Toyota,Sienna
+216,false,2017,false,white,9500000,2.1,Mitsubishi,Pajero
+217,true,2023,true,blue,23000000,5,Lexus,UX
+218,false,2014,false,red,5500000,1.3,Suzuki,Swift
+219,true,2022,true,white,16000000,3.5,Nissan,Sentra
+220,false,2016,false,silver,8500000,1.9,Hyundai,Accent
+221,true,2023,true,black,26000000,5.5,Lexus,RC F
+222,false,2015,false,gray,7800000,1.8,Toyota,Innova
+223,true,2022,true,red,18500000,4.3,Mitsubishi,Mirage
+224,false,2013,false,white,4200000,1,Suzuki,Celerio
+225,true,2023,true,silver,24000000,5.2,Lexus,GS F
+226,false,2017,false,black,10500000,2.2,Honda,BR-V
+227,true,2022,true,white,17300000,3.9,Nissan,Terra
+228,false,2014,false,red,5300000,1.2,Toyota,Wigo
+229,true,2023,true,white,19500000,4.2,Lexus,ES
+230,false,2016,false,blue,9200000,2.4,Hyundai,Tucson
+231,true,2022,true,black,18000000,4,Nissan,X-Trail
+232,false,2015,false,silver,6900000,1.6,Toyota,Yaris
+233,true,2023,true,red,21500000,4.8,Lexus,LX
+234,false,2017,false,white,10200000,2.5,Mitsubishi,Strada
+235,true,2022,true,silver,19500000,4.5,Nissan,Altima
+236,false,2014,false,black,5400000,1.3,Suzuki,Swift Dzire
+237,true,2023,true,white,23000000,5,Lexus,LC
+238,false,2016,false,gray,8600000,2,Honda,Civic
+239,true,2022,true,black,17500000,3.8,Nissan,Maxima
+240,false,2013,false,red,4800000,1,Toyota,Vios
+241,true,2023,true,white,20000000,4.4,Lexus,IS
+242,false,2015,false,silver,7200000,1.7,Hyundai,Sonata
+243,true,2022,true,blue,16000000,3.5,Nissan,Murano
+244,false,2014,false,white,5100000,1.2,Suzuki,Ertiga
+245,true,2023,true,silver,25500000,5.2,Lexus,Ls Hybrid
+246,false,2017,false,black,10800000,2.3,Honda,Jazz
+247,true,2022,true,white,18500000,4.1,Nissan,Navara
+248,false,2015,false,red,6300000,1.5,Toyota,Avensis
+249,true,2023,true,black,24500000,5.5,Lexus,Lx Hybrid
+250,false,2016,false,gray,8800000,2.1,Mitsubishi,Montero Sport
+251,true,2022,true,green,17900000,3.2,Nissan,Frontier
+252,true,2022,true,gold,15000000,3.5,Nissan,Kicks
+21,true,2021,true,pink,15500000,3.5,Toyota,Highlander
+253,true,2012,true,green,7000000,2.5,Audi,A4

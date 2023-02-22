@@ -1,0 +1,7 @@
+id,username,password,is_admin
+1,Mukhammed,12345678,true
+3,Invoker,invoker12,false
+2,Ramin,87654321,true
+4,Bekzat,12312311,false
+5,Madiyar,55555555,true
+6,Sayat,64646464,false
