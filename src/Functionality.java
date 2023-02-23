@@ -2,19 +2,22 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Functionality {
-    /*List<Automobile> automobiles1 = List.of(
-            new Automobile(false, 2008, true, "red", 1200000, 3, "Toyota","Corolla" ),
-            new Automobile(true, 2003, false,"silver", 7000000,2,"Chevrolet","Cobalt" )
+    List<Automobile> automobiles = List.of(
+            new Automobile(true, 2022, true, "silver", 35000, 3, "Toyota", "Camry"),
+            new Automobile(false, 2003, false, "black", 10000, 2, "Lada", "VAZ"),
+            new Automobile(true, 2020, false, "red", 20000, 2, "Honda", "Civic"),
+            new Automobile(false, 2019, true, "black", 50000, 4, "Jeep", "Wrangler"),
+            new Automobile(true, 2022, false, "silver", 60000, 4, "Mercedes", "Benz"),
+            new Automobile(true, 2017, false, "white", 35000, 3, "BMW", "M5"),
+            new Automobile(false, 2011, false, "black", 17000, 2, "Opel", "Astra"),
+            new Automobile(true, 2015, false, "white", 47000, 3, "Lexus", "Sedan"),
+            new Automobile(false, 2012, false, "black", 9000, 2, "Toyota", "Corolla"),
+            new Automobile(true, 2018, true, "white", 17000, 3, "Mercedes", "AMG-C63")
     );
-     */
-    // for (Automobile automobile : automobiles) {
-    //   System.out.println(automobile.getInfo());
-    //}
-    TransmissionBoxFilter transmission = new TransmissionBoxFilter();
-    ReleaseYearFilter releaseYear = new ReleaseYearFilter();
     public static void findCar() {
         Scanner scanner = new Scanner(System.in);
         TransmissionBoxFilter filterTransmission = new TransmissionBoxFilter();
@@ -34,9 +37,6 @@ public class Functionality {
         inputColor(scanner, filterColor);
         inputBrand(scanner, filterBrand);
         inputModel(scanner, filterModel);
-        //for (Automobile automobile : automobiles) {
-        //  System.out.println(automobile.toString());
-        //}
     }
 
     public static void publishCar() {
