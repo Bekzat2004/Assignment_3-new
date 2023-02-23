@@ -1,8 +1,10 @@
+
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Authentication authentication = new Authentication();
         Scanner scanner = new Scanner(System.in);
+        Authentication authentication = new Authentication();
         System.out.println("Welcome to the Marketplace!");
         System.out.println("1. Register");
         System.out.println("2. Login");
@@ -16,7 +18,8 @@ public class Main {
             case 2:
                 authentication.login();
                 break;
-            default:System.out.println("Invalid choice. Please try again.");
+            default:
+                System.out.println("Invalid choice. Please try again.");
                 break;
         }
     }
