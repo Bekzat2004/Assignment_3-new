@@ -12,15 +12,9 @@ public class Main {
         int choice = scanner.nextInt();
         scanner.nextLine();
         switch (choice) {
-            case 1:
-                authentication.register();
-                break;
-            case 2:
-                authentication.login();
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
-                break;
+            case 1 -> authentication.register();
+            case 2 -> authentication.login();
+            default -> System.out.println("Invalid choice. Please try again.");
         }
     }
 }
