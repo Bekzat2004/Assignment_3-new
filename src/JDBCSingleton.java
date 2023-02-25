@@ -11,7 +11,6 @@ public class JDBCSingleton {
     private static final String PASS = "mukha";
 
     private JDBCSingleton() {}
-
     public static JDBCSingleton getInstance() {
         JDBCSingleton result = jdbc;
         if (result == null) {
