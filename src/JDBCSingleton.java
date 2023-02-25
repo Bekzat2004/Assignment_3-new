@@ -9,6 +9,7 @@ public class JDBCSingleton {
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/tuttorial";
     private static final String USER = "postgres";
     private static final String PASS = "mukha";
+
     private JDBCSingleton() {}
 
     public static JDBCSingleton getInstance() {
