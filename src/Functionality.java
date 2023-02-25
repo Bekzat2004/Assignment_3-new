@@ -58,7 +58,7 @@ public class Functionality {
         String brand = scanner.next();
         System.out.println("Enter the model of car.");
         String model = scanner.next();
-        JDBC.addCar(isAutomatic, releaseYear, isNew, color, price, volumeOfEngine, brand, model);
+        JDBCSingleton.getInstance().addCar(isAutomatic, releaseYear, isNew, color, price, volumeOfEngine, brand, model);
         System.out.println("Car successfully published.");
     }
     public static void updateCar() {
@@ -82,7 +82,7 @@ public class Functionality {
         String brand = scanner.next();
         System.out.println("Enter the model of car.");
         String model = scanner.next();
-        JDBC.changeAuto(carId, isNew, isAutomatic, releaseYear, price, color, volumeOfEngine, brand, model);
+        JDBCSingleton.getInstance().changeAuto(carId, isNew, isAutomatic, releaseYear, price, color, volumeOfEngine, brand, model);
     }
     public static void addUser() {
         Scanner scanner = new Scanner(System.in);
@@ -93,7 +93,7 @@ public class Functionality {
         String password = scanner.next();
         System.out.println("Is the user an admin? (true/false):");
         boolean isAdmin = scanner.nextBoolean();
-        JDBC jdbc = new JDBC();
+        JDBCSingleton jdbc = JDBCSingleton.getInstance();
         try (Connection connection = jdbc.getConnection()) {
             String sql = "INSERT INTO users (username, password, is_admin) VALUES (?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -114,9 +114,8 @@ public class Functionality {
     }
     public static void showCar() {
         try {
-            JDBC jdbc = new JDBC();
             String selectCarsSql = "SELECT * FROM automobiles";
-            PreparedStatement selectCarsStmt = jdbc.getConnection().prepareStatement(selectCarsSql);
+            PreparedStatement selectCarsStmt = JDBCSingleton.jdbc.getInstance().getConnection().prepareStatement(selectCarsSql);
             ResultSet selectCarsResult = selectCarsStmt.executeQuery();
             System.out.println("+-------+------------+--------------+---------+------------+---------+-------+--------------+--------------------+");
             System.out.println("|   ID  |  Condition | Transmission |   Year  |    Price   |  Color  | Engine|     Brand    |        Model       |");
@@ -143,9 +142,8 @@ public class Functionality {
 
     public static void getUserInfo() {
         try {
-            JDBC jdbc = new JDBC();
             String selectUsersSql = "SELECT username, password, is_admin FROM users";
-            PreparedStatement selectUsersStmt = jdbc.getConnection().prepareStatement(selectUsersSql);
+            PreparedStatement selectUsersStmt = JDBCSingleton.jdbc.getInstance().getConnection().prepareStatement(selectUsersSql);
             ResultSet selectUsersResult = selectUsersStmt.executeQuery();
             System.out.println("+--------------+--------------+---------+");
             System.out.println("|   Username   |   Password   | Is Admin|");

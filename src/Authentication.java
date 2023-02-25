@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Authentication {
-    JDBC jdbc = new JDBC();
+    JDBCSingleton jdbc = JDBCSingleton.getInstance();
     MenuAdmin menuAdmin = new MenuAdmin();
     MenuUser menuUser = new MenuUser();
     public void register() {
@@ -13,7 +13,7 @@ public class Authentication {
                 String username = scanner.nextLine();
                 System.out.print("Enter your password: ");
                 String password = scanner.nextLine();
-                isRegistered = jdbc.registerUser(username, password, false);
+                isRegistered = JDBCSingleton.getInstance().registerUser(username, password, false);
                 if (isRegistered) {
                     System.out.println("Registration successful!");
                 } else {
@@ -35,7 +35,7 @@ public class Authentication {
             int option = scanner.nextInt();
             System.out.print("Enter your username: ");
             String username = scanner.next();
-            isAuthenticated = jdbc.loginUser(username, scanner, option);
+            isAuthenticated = JDBCSingleton.getInstance().loginUser(username, scanner, option);
             if (isAuthenticated) {
                 if (option == 1) {
                     System.out.println("Login successful!");
